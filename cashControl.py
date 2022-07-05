@@ -7,8 +7,6 @@ class Real():
     value = float
     types = str
 
-
-
 rs00001 = Real()
 rs00001.value = 0.01
 
@@ -18,6 +16,5 @@ rs00025 = Real()
 rs00050 = Real()
 rs00100 = Real()
 rs00200 = Real()
-
 
 print(rs00001.value)

@@ -1,4 +1,9 @@
+## COPYRIGHTS:
+# © Airbus 2022
+# ALL pertinents copyrights.
+
 #Flypy
+# PYTHON OOP AND FLYPY PROJECT...
 
 class Aircraft:
     def __init__(self,name,manufact,weight,engine,trusth,fuelcp,passen,crewcp,speedx,speedl):
@@ -48,3 +53,35 @@ a330 = Aircraft("A330","Airbus",138400.0,"PW4000",136000,25765,277,5,0,480)
 print("Aircraft Flight Project")
 a330.fleetAircraft()
 a330.speedTest()
+
+# Instances of aircraft prefixes
+a320232 = a320()
+PRMAG = a320232
+PRMAK = a320232
+PRMBA = a320232
+PRMBF = a320232
+LYMLN = a320232
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## COPYRIGHTS:
+# © Airbus 2022
+# ALL pertinents copyrights.

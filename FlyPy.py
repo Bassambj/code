@@ -1,6 +1,6 @@
 ## COPYRIGHTS:
-# © Airbus 2022
-# ALL pertinents copyrights.
+# © Airbus 2022.
+# ALL pertinents copyrights. 
 
 #Flypy
 # PYTHON OOP AND FLYPY PROJECT...

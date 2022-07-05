@@ -3,22 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 //C# project; 
 //Reference: Curso Sololearn C #
 //Under construction
- 
 namespace SoloLearn
 {
- 
     //Generic list 
-    
-    
-    
     /* A list is similar to an array, but the elements in a list can be inserted and removed dynamically.
     The C# generic collection List<T> class requires all elements be of the same type T.
     */
-    
     /*The System.Collections.Generic namespace includes the following generic collections:
     - List<T>
     - Dictionary<TKey, TValue>
@@ -34,22 +27,11 @@ namespace SoloLearn
     - Hashtable
     - BitArray
     */
-    
-    
-    
-    
-    
-    
     //Gewneric Dictionary & HashSet
     /* C# includes the HashSet<T> class in the generic collections namespace. All HashSet<T> elements are required to be of the same type T. 
     The HashSet<T> class provides high-performance set operations.
     HashSets allow fast lookup, addition, and removal of items, and can be used to implement either dynamic sets of items or lookup tables that allow finding an item by its key.
     (e.g., finding the phone number of a person by the last name).*/
-    
-        
-    
-    
-        
     //Generic class - most commom use for generica classes is with collections of items.
     class Stack<T>{
      
@@ -81,14 +63,10 @@ namespace SoloLearn
         
         static void Main(string[] args)
         {
-            
             //Generic List
             List<int> li = new List<int>();
-            
             //Generic HashSet
             HashSet<int> hs = new HashSet<int>();
-            
-            
             Console.WriteLine("= = = = = = = = = = = = = = =");
             Console.WriteLine("C# - Generic Methods");
             Console.WriteLine(" ");
@@ -96,7 +74,6 @@ namespace SoloLearn
             Console.WriteLine("static void Swap<T>(ref T a, ref T b){");
             Console.WriteLine("T temp = a; a = b; b = temp; }");
             Console.WriteLine(" ");
-            
             //Gereric with int:
             int a = 4, b = 9;
             int c = a + b;
@@ -135,10 +112,7 @@ namespace SoloLearn
             {
                 intStack.Push(x*2);
                 Console.WriteLine("intStack{"+x+"} = "+intStack.Get(x));
-            }
-            
-        }
-        
-    }
-    
+            }   
+        }   
+    }   
 }

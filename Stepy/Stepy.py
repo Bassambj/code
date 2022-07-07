@@ -11,7 +11,7 @@ choice=int(input("Enter your choice: "))
 
 if(choice==1):
     conn.execute(''' CREATE TABLE step
-    (ID INT NOT NULL,
+    (ID TEXT NOT NULL,
     DATE TEXT NOT NULL,
     QUANTY INT NOT NULL,
     ANNOTATION TEXT);''')
@@ -19,10 +19,11 @@ elif(choice==2):
     subChoice=0
     while(subChoice!=1):
         print("Insert step...")
+        idRow=input("Enter the ID : ")
         date=input("Enter the date: ")
         quanty=int(input("Enter the quant.: "))
         annot=input("Enter any annotation: ")
-        cursor.execute(""" INSERT INTO step (DATE, QUANTY, ANNOTATION) VALUES (?,?,?) """, (date,quanty,annot))
+        cursor.execute(""" INSERT INTO step (ID, DATE, QUANTY, ANNOTATION) VALUES (?,?,?,?) """, (idRow,date,quanty,annot))
         conn.commit()
         subChoice=int(input("Type 1 to exit and 0 to inserto more steps. >"))
 elif(choice==3):
@@ -31,9 +32,9 @@ elif(choice==3):
         print(row)
 elif(choice==4):
     print("DELETE ROW")
-    print("Enter the ID number that will ve DELETED: ")
-    idRow=
-    
+    idRow=input("Enter the ID number that will ve DELETED: ")
+    cursor.execute(" DELETE FROM step WHERE ID = "+idRow+" ")
+    conn.commit()
 else:
     print("Error choice.")
 conn.close

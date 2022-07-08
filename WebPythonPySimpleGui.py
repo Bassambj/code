@@ -1,5 +1,6 @@
 #import PySimpleGui as sg
 # https://pysimplegui.readthedocs.io/
+
 '''
 class TelaPython:
 
@@ -21,5 +22,5 @@ class TelaPython:
 tela = TelaPython()
 tela.Iniciar()
 
-Red only
+Read only
 ''' 

@@ -6,7 +6,7 @@
 # PYTHON OOP AND FLYPY PROJECT...
 
 class Aircraft:
-    def __init__(self,name,manufact,weight,engine,trusth,fuelcp,passen,crewcp,speedx,speedl):
+    def __init__(self,name,manufact,weight,engine,trusth,fuelcp,passen,crewcp,speedx,speedl,altitude):
         self.name=name # name
         self.manufact=manufact # manufacturer
         self.weight=weight # weight in lbs
@@ -17,6 +17,7 @@ class Aircraft:
         self.crewcp=crewcp # crew capacity
         self.speedx=speedx # speed status
         self.speedl=speedl # aircraft limit speed - nm
+        self.altitude=altitude # aircraft altitude
 
     def speedup(self):
         self.speedx = self.speedx+20
@@ -40,22 +41,26 @@ class Aircraft:
         print("Limit:",self.speedl,"<")
         print("=========================")
         print("  ",self.name,"= slowing DOWN: ")
-        print("Airbus A319 slowing down: ")
         while (self.speedx > 0):
             self.speedow()
             print(self.speedx,"knots")
 
+    def fly(): # aerodynamics# fly support
+        pass
+    
+
 # Creating instances of the aircraft class:
-a319 = Aircraft("A319","Airbus",129600.0,"PW1100G",66000,6280,160,5,0,400)
-a320 = Aircraft("A320","Airbus",138400.0,"PW1100G",66000,6280,180,5,0,380)
-a330 = Aircraft("A330","Airbus",138400.0,"PW4000",136000,25765,277,5,0,480)
+a319 = Aircraft("A319","Airbus",129600.0,"PW1100G",66000,6280,160,5,0,400,0.0)
+a320 = Aircraft("A320","Airbus",138400.0,"PW1100G",66000,6280,180,5,0,380,0.0)
+a330 = Aircraft("A330","Airbus",138400.0,"PW4000",136000,25765,277,5,0,480,0.0)
 
 print("Aircraft Flight Project")
 a330.fleetAircraft()
 a330.speedTest()
 
 # Instances of aircraft prefixes
-a320232 = a320()
+a320232 = a320
+a320232.speedTest()
 PRMAG = a320232
 PRMAK = a320232
 PRMBA = a320232

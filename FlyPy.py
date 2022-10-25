@@ -6,7 +6,7 @@
 # PYTHON OOP AND FLYPY PROJECT...
 
 class Aircraft:
-    def __init__(self,name,manufact,weight,engine,trusth,fuelcp,passen,crewcp,speedx,speedl,altitude):
+    def __init__(self,name,manufact,weight,engine,trusth,fuelcp,passen,crewcp,speedx,speedl,vspeed,altitude):
         self.name=name # name
         self.manufact=manufact # manufacturer
         self.weight=weight # weight in lbs
@@ -45,14 +45,20 @@ class Aircraft:
             self.speedow()
             print(self.speedx,"knots")
 
-    def fly(): # aerodynamics# fly support
+    
+    def fly(self):
+        self.vspeed=self.vspeed+self.vspeed
+        self.altitude = self.vspeed*1.05
+        
+    def flyTest():
         pass
+
     
 
 # Creating instances of the aircraft class:
-a319 = Aircraft("A319","Airbus",129600.0,"PW1100G",66000,6280,160,5,0,400,0.0)
-a320 = Aircraft("A320","Airbus",138400.0,"PW1100G",66000,6280,180,5,0,380,0.0)
-a330 = Aircraft("A330","Airbus",138400.0,"PW4000",136000,25765,277,5,0,480,0.0)
+a319 = Aircraft("A319","Airbus",129600.0,"PW1100G",66000,6280,160,5,0,400,0.0,0.0)
+a320 = Aircraft("A320","Airbus",138400.0,"PW1100G",66000,6280,180,5,0,380,0.0,0.0)
+a330 = Aircraft("A330","Airbus",138400.0,"PW4000",136000,25765,277,5,0,480,0.0,0.0)
 
 print("Aircraft Flight Project")
 a330.fleetAircraft()

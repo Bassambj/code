@@ -28,3 +28,5 @@ except Exception:
     print("Exception.")
 
 countdown()
+pause()
+clear()

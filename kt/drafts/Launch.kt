@@ -25,9 +25,7 @@ class Rocket(){
        this.tank= this.tank - this.fluxo 
        print(this.tank)     
        println(" - "+this.power)
-       
        }
        println("Fuel off!")
    }  
-  
         }

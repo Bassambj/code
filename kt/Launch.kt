@@ -2,7 +2,6 @@ fun main(args: Array<String>) {
    val titam = Rocket()
    titam.toFuel(1000.0)
    titam.start()
-    
 }
 
 class Rocket(){
@@ -10,7 +9,6 @@ class Rocket(){
    var tank: Double = 0.0
    var efficiency: Double  = 1.02
    var fluxo: Double = 5.0
-
    
    fun toFuel(x: Double){
        print("Fuel;")
@@ -31,5 +29,5 @@ class Rocket(){
        }
        println("Fuel off!")
    }  
-   
+  
         }

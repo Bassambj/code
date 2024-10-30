@@ -32,3 +32,4 @@ class InventoryApplication : Application() {
         container = AppDataContainer(this)
     }
 }
+
